@@ -1,5 +1,5 @@
 
-epta.controller('IndexCtrl', function($scope, TaskProvider) {
+anujii.controller('IndexCtrl', function($scope, TaskProvider) {
     $scope.tasks = TaskProvider.getTasks();
     $scope.newTask = TaskProvider.newTask();
 
@@ -16,7 +16,7 @@ epta.controller('IndexCtrl', function($scope, TaskProvider) {
     };
 });
 
-epta.controller('EditCtrl', function($scope, $routeParams, $location, TaskProvider) {
+anujii.controller('EditCtrl', function($scope, $routeParams, $location, TaskProvider) {
     var id = $routeParams.id;
     $scope.task = TaskProvider.getTask(id);
 

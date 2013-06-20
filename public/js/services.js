@@ -1,4 +1,4 @@
-epta.service('TaskProvider', function($resource) {
+anujii.service('TaskProvider', function($resource) {
     var Task = $resource(
         "/tasks/:id",
         {id: "@id" },

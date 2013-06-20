@@ -1,6 +1,6 @@
-var epta = angular.module('epta', ['ngResource']);
+var anujii = angular.module('anujii', ['ngResource']);
 
-epta.config(function($routeProvider, $locationProvider) {
+anujii.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {controller: 'IndexCtrl', templateUrl: '/partials/index.html'})
         .when('/edit/:id', {controller: 'EditCtrl', templateUrl: '/partials/edit.html'})

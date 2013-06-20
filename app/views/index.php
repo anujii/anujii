@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="epta" id="ng-app" xmlns:ng="http://angularjs.org">
+<html lang="en" ng-app="anujii" id="ng-app" xmlns:ng="http://angularjs.org">
 <head>
 	<style type="text/css">
 		[ng-cloak] {
