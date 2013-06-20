@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="epta" id="ng-app" xmlns:ng="http://angularjs.org">
+<html lang="en" ng-app="anujii" id="ng-app" xmlns:ng="http://angularjs.org">
 <head>
 	<style type="text/css">
 		[ng-cloak] {
@@ -8,7 +8,7 @@
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<title>EPTA</title>
+	<title>Anujii</title>
 	<link rel="stylesheet" href="/vendor/bootstrap/bootstrap.css"/>
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
