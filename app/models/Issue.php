@@ -13,5 +13,8 @@
  * @property string $description
  */
 class Issue extends Eloquent {
+
 	protected $table = 'issues';
+
+	protected $fillable = array('subject', 'description');//for now
 }

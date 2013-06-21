@@ -12,9 +12,7 @@ class TasksController extends BaseController {
 	}
 
 	public function store() {
-		$task = new Issue();
-		$task->subject = $this->request->input('subject');
-		$task->save();
+		$task = Issue::create($this->request->all());
 		return Response::json($task);
 	}
 
