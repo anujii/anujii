@@ -24,13 +24,23 @@ anujii.service('TaskProvider', function($resource) {
     };
 
     this.createTask = function(newTask) {
-        tasks.push(newTask);
-        newTask.$save();
+        var i = tasks.push(newTask) - 1;
+        newTask.$save(function(task) {
+            tasks[i] = task;
+        });
     };
     this.updateTask = function(task) {
-        var i = _.pluck(tasks, 'id').indexOf(task.id);
-        tasks[i] = task;
         task.$update();
+        var ids = _.pluck(tasks, 'id');
+        var i = ids.indexOf(task.id);
+        if(i == -1) {
+            var id = angular.isString(task.id) ? parseInt(task.id) : task.id + '';
+            i = ids.indexOf(id);
+        }
+        if(i == -1) {
+            return;
+        }
+        tasks[i] = task;
     };
     this.deleteTask = function (task) {
         tasks = _.without(tasks, task);
