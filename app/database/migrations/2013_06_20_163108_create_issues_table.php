@@ -30,8 +30,8 @@ class CreateIssuesTable extends Migration {
 			//--тоже саомое
 //			Трудозатраты (в часах, число int)
 			//--расчитыается из когда закончил - когда взял(паузы тоже стоит учитывать)
-			$table->dateTime('start_dt');
-			$table->dateTime('end_dt');
+			$table->dateTime('started_at');
+			$table->dateTime('ended_at');
 //			Описание задачи (текст, не более 10к символов)
 			$table->text('description');
 //			Список дел которые необходимо выполнить в этой задаче

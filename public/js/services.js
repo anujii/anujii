@@ -24,16 +24,16 @@ anujii.service('TaskProvider', function($resource) {
     };
 
     this.createTask = function(newTask) {
-        newTask.$save();
         tasks.push(newTask);
+        newTask.$save();
     };
     this.updateTask = function(task) {
-        task.$update();
         var i = _.pluck(tasks, 'id').indexOf(task.id);
         tasks[i] = task;
+        task.$update();
     };
     this.deleteTask = function (task) {
-        task.$delete();
         tasks = _.without(tasks, task);
+        task.$delete();
     };
 });
